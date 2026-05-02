@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zoe Mascariñas Green — AI Implementer & Law Student</title>
+<meta name="description" content="Zoe Mascariñas Green — first-year LLB student at the University of York and AI Implementer at Blue-Green Advisors. Co-author of The Regenerate Leap. Working on the intersection of AI, the legal profession, and access to justice." />
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Zoe Mascariñas Green — AI Implementer & Law Student" />
+<meta property="og:description" content="First-year LLB student at the University of York and AI Implementer at Blue-Green Advisors. Co-author of The Regenerate Leap." />
+<meta property="og:image" content="zoe-photo.jpeg" />
+<meta property="og:url" content="https://zoegracegreen.com" />
+<meta name="twitter:card" content="summary_large_image" />
+<!-- Structured data for AI agents and search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Zoe Mascariñas Green",
+  "givenName": "Zoe",
+  "familyName": "Green",
+  "jobTitle": "Associate — AI & Digital Strategy",
+  "description": "First-year LLB student at the University of York and AI Implementer at Blue-Green Advisors. Co-author of The Regenerate Leap. Aspiring lawyer working on the intersection of AI and access to justice.",
+  "url": "https://zoegracegreen.com",
+  "image": "https://zoegracegreen.com/zoe-photo.jpeg",
+  "email": "zgmsgreen@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "York",
+    "addressCountry": "United Kingdom"
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "University of York" },
+    { "@type": "EducationalOrganization", "name": "Hills Road Sixth Form College" },
+    { "@type": "EducationalOrganization", "name": "St Christopher's School" }
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Blue-Green Advisors Ltd.",
+    "url": "https://bluegreenadvisory-teal.vercel.app"
+  },
+  "author": {
+    "@type": "Book",
+    "name": "The Regenerate Leap",
+    "url": "https://www.regenerateleap.com",
+    "datePublished": "2026-01"
+  },
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Legal Technology",
+    "Access to Justice",
+    "Commercial Law",
+    "AI Policy",
+    "Exponential Technologies"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/zoe-mascariñas-green-137494267/"
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Cormorant+SC:wght@400;500;600&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #fbf8f1;
+    --paper-warm: #f6f0e1;
+    --ink: #1d2733;
+    --ink-soft: #3a4654;
+    --blue: #a8c5dc;
+    --blue-deep: #6b96b8;
+    --blue-pale: #e0ecf5;
+    --gold: #b08d3e;
+    --gold-soft: #d4b677;
+    --gold-pale: #f0e3c2;
+    --rule: #d8c89c;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+  body {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 300;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    background-image:
+      radial-gradient(rgba(176, 141, 62, 0.04) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  /* ==== Striped paper texture ==== */
+  .stripes {
+    background-image: repeating-linear-gradient(
+      90deg,
+      var(--blue-pale) 0px,
+      var(--blue-pale) 2px,
+      transparent 2px,
+      transparent 14px
+    );
+  }
+
+  /* ==== Top nav ==== */
+  nav.top {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(251, 248, 241, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Cormorant SC', serif;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+  }
+
+  nav.top .monogram {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--ink);
+  }
+
+  nav.top ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+  }
+
+  nav.top a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    transition: color 0.2s;
+    position: relative;
+  }
+
+  nav.top a:hover { color: var(--gold); }
+
+  nav.top a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0; right: 0;
+    height: 1px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+
+  nav.top a:hover::after { transform: scaleX(1); }
+
+  /* ==== Hero ==== */
+  .hero {
+    position: relative;
+    padding: 80px 40px 100px;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 60px;
+    background-image: repeating-linear-gradient(
+      90deg,
+      var(--blue) 0px,
+      var(--blue) 3px,
+      transparent 3px,
+      transparent 16px
+    );
+    opacity: 0.5;
+  }
+
+  .hero-grid {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .hero-text .eyebrow {
+    font-family: 'Cormorant SC', serif;
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .hero-text .eyebrow::before,
+  .hero-text .eyebrow::after {
+    content: '';
+    flex: 0 0 30px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .hero-text .eyebrow::after { flex: 1; }
+
+  .hero-text h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: clamp(48px, 7vw, 88px);
+    line-height: 0.98;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+  .hero-text h1 em {
+    font-style: italic;
+    font-weight: 300;
+    color: var(--blue-deep);
+  }
+
+  .hero-text .tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin: 24px 0 32px;
+    max-width: 480px;
+    line-height: 1.4;
+  }
+
+  .hero-text .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+
+  .hero-text .meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .hero-text .meta span::before {
+    content: '✦';
+    color: var(--gold);
+  }
+
+  /* Photo frame */
+  .photo-wrap {
+    position: relative;
+    padding: 24px;
+  }
+
+  .photo-frame {
+    position: relative;
+    aspect-ratio: 1 / 1.05;
+    background: white;
+    padding: 20px;
+    box-shadow:
+      0 1px 2px rgba(0,0,0,0.08),
+      0 8px 24px rgba(29, 39, 51, 0.10);
+    transform: rotate(-1.5deg);
+    transition: transform 0.4s ease;
+  }
+
+  .photo-frame:hover { transform: rotate(0deg); }
+
+  .photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .photo-frame .caption {
+    position: absolute;
+    bottom: 16px;
+    left: 0; right: 0;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink-soft);
+  }
+
+  .photo-wrap::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+      90deg,
+      var(--blue) 0px,
+      var(--blue) 2px,
+      transparent 2px,
+      transparent 14px
+    );
+    opacity: 0.35;
+    z-index: -1;
+    transform: rotate(2deg);
+  }
+
+  /* ==== Section structure ==== */
+  section {
+    padding: 100px 40px;
+    position: relative;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-head {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .section-head .num {
+    font-family: 'Cormorant SC', serif;
+    font-size: 12px;
+    letter-spacing: 0.4em;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+
+  .section-head h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: clamp(36px, 5vw, 56px);
+    line-height: 1.05;
+    color: var(--ink);
+  }
+
+  .section-head h2 em {
+    font-style: italic;
+    color: var(--blue-deep);
+  }
+
+  .section-head .ornament {
+    margin: 16px auto 0;
+    width: 60px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 6px;
+  }
+
+  /* About */
+  .about {
+    background: linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 100%);
+  }
+
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .about-content.single {
+    display: block;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .about-content.single .lead-line {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 26px;
+    line-height: 1.4;
+    color: var(--ink);
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 24px 32px;
+    border-top: 1px solid var(--gold-soft);
+    border-bottom: 1px solid var(--gold-soft);
+  }
+
+  .about-content.single p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin-bottom: 22px;
+  }
+
+  .about-content p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+  }
+
+  .about-content:not(.single) p:first-child::first-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    line-height: 0.85;
+    float: left;
+    padding: 6px 12px 0 0;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  .inline-link {
+    color: var(--blue-deep);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold-soft);
+    padding-bottom: 1px;
+    transition: all 0.2s;
+  }
+
+  .inline-link:hover {
+    color: var(--gold);
+    border-bottom-color: var(--gold);
+  }
+
+  /* Experience timeline */
+  .experience {
+    background: var(--paper-warm);
+    position: relative;
+  }
+
+  .experience::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 6px;
+    background-image: repeating-linear-gradient(
+      90deg,
+      var(--blue) 0px,
+      var(--blue) 2px,
+      transparent 2px,
+      transparent 12px
+    );
+    opacity: 0.5;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 900px;
+    margin: 0 auto;
+    border-left: 1px dashed var(--rule);
+    padding-left: 40px;
+  }
+
+  .role {
+    position: relative;
+    padding: 32px 0 32px 0;
+    border-bottom: 1px solid rgba(216, 200, 156, 0.4);
+  }
+
+  .role:last-child { border-bottom: none; }
+
+  .role::before {
+    content: '✦';
+    position: absolute;
+    left: -50px;
+    top: 36px;
+    color: var(--gold);
+    background: var(--paper-warm);
+    padding: 0 4px;
+    font-size: 14px;
+  }
+
+  .role .date {
+    font-family: 'Cormorant SC', serif;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+
+  .role h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+
+  .role .org {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--blue-deep);
+    margin-bottom: 14px;
+  }
+
+  .role p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    max-width: 700px;
+  }
+
+  .role .sublist {
+    list-style: none;
+    margin-top: 18px;
+    max-width: 700px;
+  }
+
+  .role .sublist li {
+    padding: 10px 0;
+    border-bottom: 1px dotted rgba(216, 200, 156, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+
+  .role .sublist li:last-child { border-bottom: none; }
+
+  .role .sublist .item-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  .role .sublist .item-role {
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+
+  .role .sublist .item-date {
+    font-family: 'Cormorant SC', serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .role .book-links {
+    margin-top: 16px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .role .book-links a {
+    font-family: 'Cormorant SC', serif;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: var(--blue-deep);
+    text-decoration: none;
+    border-bottom: 1px solid var(--blue-deep);
+    padding-bottom: 2px;
+    transition: all 0.2s;
+  }
+
+  .role .book-links a:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+  }
+
+  /* Book feature */
+  .book {
+    background: var(--paper);
+  }
+
+  .book-feature {
+    background: white;
+    border: 1px solid var(--rule);
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 30px rgba(29, 39, 51, 0.05);
+  }
+
+  .book-feature::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border: 1px solid var(--gold-soft);
+    pointer-events: none;
+  }
+
+  .book-cover-real {
+    aspect-ratio: 2 / 3;
+    background: var(--paper-warm);
+    border: 8px solid white;
+    box-shadow: 0 6px 30px rgba(29, 39, 51, 0.25);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .book-cover-real img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+
+  .book-cover-real::before {
+    content: 'Add book-cover.jpg';
+    position: absolute;
+    inset: 12px;
+    border: 1px dashed var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Cormorant SC', serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    z-index: 1;
+  }
+
+  /* Old fake cover styling kept for reference */
+  .book-cover {
+    aspect-ratio: 2 / 3;
+    background:
+      linear-gradient(135deg, #2a3d52 0%, #4a6580 100%);
+    border: 8px solid white;
+    box-shadow: 0 6px 30px rgba(29, 39, 51, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 40px 24px;
+    text-align: center;
+    position: relative;
+  }
+
+  .book-cover::before {
+    content: '';
+    position: absolute;
+    inset: 12px;
+    border: 1px solid rgba(212, 182, 119, 0.5);
+  }
+
+  .book-cover .label {
+    font-family: 'Cormorant SC', serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--gold-soft);
+    margin-bottom: 24px;
+  }
+
+  .book-cover h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.05;
+    margin-bottom: 14px;
+  }
+
+  .book-cover h3 em {
+    font-style: italic;
+    color: var(--gold-soft);
+  }
+
+  .book-cover .by {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: auto;
+    padding-top: 24px;
+  }
+
+  .book-info .label {
+    font-family: 'Cormorant SC', serif;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+
+  .book-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+
+  .book-info h3 em { font-style: italic; }
+
+  .book-info .subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--ink-soft);
+    margin-bottom: 24px;
+  }
+
+  .book-info p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+  }
+
+  .book-info a.button {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 28px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    text-decoration: none;
+    font-family: 'Cormorant SC', serif;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    transition: all 0.3s;
+  }
+
+  .book-info a.button:hover {
+    background: var(--gold);
+    color: white;
+  }
+
+  .book-cta-links {
+    margin-top: 24px;
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
+  .book-cta-links a {
+    font-family: 'Cormorant SC', serif;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 3px;
+    transition: all 0.2s;
+  }
+
+  .book-cta-links a:hover {
+    color: var(--blue-deep);
+    border-color: var(--blue-deep);
+  }
+
+  /* Distinctions / Affiliations */
+  .distinctions {
+    background: linear-gradient(180deg, var(--paper) 0%, var(--paper-warm) 100%);
+  }
+
+  .pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .pillar {
+    background: white;
+    border: 1px solid var(--rule);
+    padding: 36px 32px;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  .pillar:hover { transform: translateY(-4px); }
+
+  .pillar::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background-image: repeating-linear-gradient(
+      90deg,
+      var(--blue) 0px,
+      var(--blue) 2px,
+      transparent 2px,
+      transparent 10px
+    );
+  }
+
+  .pillar .marker {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 36px;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+
+  .pillar h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+
+  .pillar .pillar-meta {
+    font-family: 'Cormorant SC', serif;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: var(--blue-deep);
+    margin-bottom: 14px;
+  }
+
+  .pillar p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+
+  /* Writing / Commentary */
+  .writing {
+    background: var(--paper);
+  }
+
+  .writing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .clipping {
+    background: white;
+    padding: 32px;
+    border: 1px solid var(--rule);
+    position: relative;
+  }
+
+  .clipping::after {
+    content: '';
+    position: absolute;
+    top: -8px; left: 30px;
+    width: 60px; height: 18px;
+    background: rgba(168, 197, 220, 0.6);
+    transform: rotate(-3deg);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+
+  .clipping .date {
+    font-family: 'Cormorant SC', serif;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+
+  .clipping h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .clipping p {
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+
+  .clipping .read-more {
+    display: inline-block;
+    margin-top: 14px;
+    font-family: 'Cormorant SC', serif;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: var(--blue-deep);
+    text-decoration: none;
+    border-bottom: 1px solid var(--blue-deep);
+    padding-bottom: 2px;
+  }
+
+  /* Pull quote */
+  .pullquote-section {
+    background: var(--paper-warm);
+    text-align: center;
+    padding: 120px 40px;
+    position: relative;
+  }
+
+  .pullquote-section::before,
+  .pullquote-section::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    height: 6px;
+    background-image: repeating-linear-gradient(
+      90deg,
+      var(--blue) 0px,
+      var(--blue) 2px,
+      transparent 2px,
+      transparent 12px
+    );
+    opacity: 0.5;
+  }
+
+  .pullquote-section::before { top: 0; }
+  .pullquote-section::after { bottom: 0; }
+
+  .pullquote {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.25;
+    color: var(--ink);
+    position: relative;
+  }
+
+  .pullquote::before {
+    content: '"';
+    font-size: 120px;
+    color: var(--gold);
+    position: absolute;
+    top: -60px; left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1;
+  }
+
+  .pullquote-section .attribution {
+    margin-top: 32px;
+    font-family: 'Cormorant SC', serif;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+  }
+
+  /* Education */
+  .education {
+    background: var(--paper);
+  }
+
+  .edu-stack {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .edu-card {
+    background: white;
+    border: 1px solid var(--rule);
+    padding: 40px 48px;
+    position: relative;
+    text-align: left;
+  }
+
+  .edu-card::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border: 1px solid var(--gold-soft);
+    pointer-events: none;
+  }
+
+  .edu-card .crest {
+    font-size: 22px;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+
+  .edu-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+
+  .edu-card .program {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 17px;
+    color: var(--ink-soft);
+    margin-bottom: 12px;
+  }
+
+  .edu-card .years {
+    font-family: 'Cormorant SC', serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--blue-deep);
+    margin-bottom: 18px;
+  }
+
+  .edu-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+  }
+
+  .edu-card .epq-note {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--rule);
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+
+  .edu-card .epq-note strong {
+    font-family: 'Cormorant SC', serif;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .edu-card .grade-pill {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px 10px;
+    background: var(--gold-pale);
+    color: var(--gold);
+    font-family: 'Cormorant SC', serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    border: 1px solid var(--gold-soft);
+    vertical-align: middle;
+  }
+
+  /* Contact */
+  .contact {
+    background: linear-gradient(180deg, var(--paper-warm) 0%, var(--paper) 100%);
+    text-align: center;
+  }
+
+  .contact .lead {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--ink-soft);
+    max-width: 600px;
+    margin: 0 auto 48px;
+    line-height: 1.5;
+  }
+
+  .contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 200px;
+  }
+
+  .contact-item .label {
+    font-family: 'Cormorant SC', serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+
+  .contact-item .value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+
+  .contact-item .value:hover {
+    border-color: var(--gold);
+  }
+
+  .ai-invite {
+    max-width: 640px;
+    margin: 64px auto 0;
+    padding: 36px 40px;
+    background: white;
+    border: 1px solid var(--rule);
+    text-align: center;
+    position: relative;
+  }
+
+  .ai-invite::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border: 1px solid var(--gold-soft);
+    pointer-events: none;
+  }
+
+  .ai-invite-rule {
+    color: var(--gold);
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  .ai-invite h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--ink);
+    margin-bottom: 14px;
+  }
+
+  .ai-invite p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  footer {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 60px 40px 40px;
+    text-align: center;
+    position: relative;
+  }
+
+  footer::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 6px;
+    background-image: repeating-linear-gradient(
+      90deg,
+      var(--gold-soft) 0px,
+      var(--gold-soft) 2px,
+      transparent 2px,
+      transparent 12px
+    );
+  }
+
+  footer .signature {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  footer .copy {
+    font-family: 'Cormorant SC', serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    color: var(--gold-soft);
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    nav.top { padding: 14px 20px; }
+    nav.top ul { gap: 18px; font-size: 11px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .about-content { grid-template-columns: 1fr; gap: 24px; }
+    .book-feature { grid-template-columns: 1fr; padding: 40px 28px; gap: 40px; }
+    .pillar-grid, .writing-grid { grid-template-columns: 1fr; }
+    section { padding: 70px 24px; }
+    .hero { padding: 50px 24px 70px; }
+  }
+
+  @media (max-width: 600px) {
+    nav.top ul { display: none; }
+    .timeline { padding-left: 24px; }
+    .role::before { left: -34px; }
+  }
+</style>
+</head>
+<body>
+<!-- ============ NAV ============ -->
+<nav class="top">
+  <div class="monogram">Z<span style="color:var(--gold);">·</span>M<span style="color:var(--gold);">·</span>G</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#book">Book</a></li>
+    <li><a href="#distinctions">Distinctions</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <div class="eyebrow">Curriculum Vitae</div>
+      <h1>Zoe Mascariñas <em>Green</em></h1>
+      <p class="tagline">A first-year law student applying lessons from a period of personal adversity to one of the legal profession's coming questions: how AI reshapes access to justice.</p>
+      <div class="meta">
+        <span>Aspiring Lawyer</span>
+        <span>AI Implementer · Blue-Green Advisors</span>
+        <span>York · United Kingdom</span>
+      </div>
+    </div>
+    <div class="photo-wrap">
+      <div class="photo-frame">
+        <img src="zoe-photo.jpeg" alt="Portrait of Zoe Mascariñas Green, AI Implementer at Blue-Green Advisors and LLB student at the University of York" />
+      </div>
+    </div>
+  </div>
+</header>
+<!-- ============ ABOUT ============ -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">— I —</div>
+      <h2>A short <em>biography</em></h2>
+      <div class="ornament">✦ ✦ ✦</div>
+    </div>
+    <div class="about-content single">
+      <p class="lead-line">I am a student who co-authored a book on leading through disruption — and I'm applying that same thinking to AI and access to justice.</p>
+  <p>I am an aspiring lawyer reading for an LLB at the University of York, training to qualify as a commercial solicitor with a particular interest in how business will operate as we enter the singularity. These forces are reshaping industries and the entire legal profession — the world is being rebuilt from the ground up, and I intend to have a hand in how it gets designed.</p>
+
+  <p>Alongside my studies, I work as an AI implementer at <a href="https://bluegreenadvisory-teal.vercel.app/" target="_blank" rel="noopener" class="inline-link">Blue-Green Advisors</a> — building and embedding the artificial intelligence systems that now sit at the centre of how the firm works day to day.</p>
+
+  <p>In January 2026, I co-authored <a href="https://www.regenerateleap.com/" target="_blank" rel="noopener" class="inline-link"><em>The Regenerate Leap</em></a> — a guidebook to leadership under pressure, drawing on patterns of regeneration observed in natural systems rather than conventional motivational frameworks. The book emerged from a period of personal adversity, written as a structured framework rather than a memoir. The experience clarified something for me about the legal profession: systems matter, but they do not do the thinking for you. Real progress is built at the level of the individual.</p>
+
+  <p>It is the lens I now bring to everything I work on: my studies, my work at Blue-Green Advisors, and the question I find myself most drawn to — how AI can open access to justice rather than simply make existing firms more efficient.</p>
+</div>
+  </div>
+</section>
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="experience">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">— II —</div>
+      <h2>Experience &amp; <em>Apprenticeship</em></h2>
+      <div class="ornament">✦ ✦ ✦</div>
+    </div>
+    <div class="timeline">
+  <div class="role">
+    <div class="date">2026 — Present · United Kingdom</div>
+    <h3>Associate — AI &amp; Digital Strategy</h3>
+    <div class="org">Blue-Green Advisors Ltd.</div>
+    <p>Leading the digital transformation of Blue-Green Advisors, a strategic advisory firm working with institutional leaders navigating irreversible change. Responsible for embedding AI into the firm's research, advisory, and client-facing workflows — translating exponential-tech literacy into practical operating change for a working consultancy.</p>
+    <div class="book-links">
+      <a href="https://bluegreenadvisory-teal.vercel.app" target="_blank" rel="noopener">VISIT BLUE-GREEN ADVISORS →</a>
+    </div>
+  </div>
+
+  <div class="role">
+    <div class="date">2026 · Co-Author</div>
+    <h3>The Regenerate Leap</h3>
+    <div class="org">Co-authored with Stuart J. Green · Published January 2026</div>
+    <p>A guidebook to leadership under pressure, examining what it means to lead when stability cannot be assumed. The framework draws on patterns of regeneration observed in natural systems and is grounded in lived experience of systemic disruption rather than theoretical models.</p>
+    <div class="book-links">
+      <a href="https://www.regenerateleap.com/" target="_blank" rel="noopener">VISIT THE WEBSITE →</a>
+      <a href="https://www.amazon.com/Regenerate-Leap-Transform-Enduring-fails-ebook/dp/B0GGC7BX1D" target="_blank" rel="noopener">READ THE BOOK →</a>
+    </div>
+  </div>
+
+  <div class="role">
+    <div class="date">2025 · Washington, D.C.</div>
+    <h3>Personal Apprentice</h3>
+    <div class="org">to Dr. Gina Green — Board Member, National Whistleblower Center; Professor of the Practice and Academic Co-Director of the MS in Climate, Environment &amp; Health, The Earth Commons, Georgetown University</div>
+    <p>Worked alongside a senior figure operating across regulatory accountability and academic policy during a period of political turbulence in the United States. Direct exposure to issues of governance, the structural role of disclosure in democratic institutions, and the interface between climate, environment, and public health policy.</p>
+  </div>
+
+  <div class="role">
+    <div class="date">2024 · Manila, Philippines</div>
+    <h3>Legal Intern</h3>
+    <div class="org">Cruz Marcelo &amp; Tenefrancia</div>
+    <p>Internship at one of the leading full-service law firms in the Philippines, operating in a complex cross-border commercial environment. Early exposure to the practical mechanics of international and domestic commercial practice in a major Southeast Asian jurisdiction.</p>
+  </div>
+
+  <div class="role">
+    <div class="date">2021 — Present · United Kingdom</div>
+    <h3>Commercial &amp; Service</h3>
+    <div class="org">Hospitality, small enterprise, and volunteering</div>
+    <p>A working sense of commercial awareness, adaptability, and how teams actually function under day-to-day pressure — from formal hospitality at Cambridge to closing a busy café independently.</p>
+    <ul class="sublist">
+      <li>
+        <div>
+          <div class="item-title">Jones' Café</div>
+          <div class="item-role">Barista &amp; front-of-house</div>
+        </div>
+        <div class="item-date">OCT 2024 — PRESENT</div>
+      </li>
+      <li>
+        <div>
+          <div class="item-title">Surfin Café</div>
+          <div class="item-role">Barista &amp; front-of-house</div>
+        </div>
+        <div class="item-date">OCT 2024 — FEB 2025</div>
+      </li>
+      <li>
+        <div>
+          <div class="item-title">Letchworth Sports &amp; Tennis Centre</div>
+          <div class="item-role">Barista, baker &amp; bartender</div>
+        </div>
+        <div class="item-date">MAR — DEC 2024</div>
+      </li>
+      <li>
+        <div>
+          <div class="item-title">Magdalene College, University of Cambridge</div>
+          <div class="item-role">Formal hospitality</div>
+        </div>
+        <div class="item-date">MAR — DEC 2023</div>
+      </li>
+      <li>
+        <div>
+          <div class="item-title">Biggleswade Rainbows</div>
+          <div class="item-role">Volunteer child support assistant</div>
+        </div>
+        <div class="item-date">2021 — 2022</div>
+      </li>
+    </ul>
+  </div>
+
+</div>
+  </div>
+</section>
+<!-- ============ BOOK ============ -->
+<section id="book" class="book">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">— III —</div>
+      <h2>The <em>Regenerate</em> Leap</h2>
+      <div class="ornament">✦ ✦ ✦</div>
+    </div>
+    <div class="book-feature">
+      <div class="book-cover-real">
+        <img src="book-cover.jpg" alt="The Regenerate Leap, co-authored by Zoe Mascariñas Green" onerror="this.style.display='none'" />
+      </div>
+      <div class="book-info">
+        <div class="label">PUBLISHED · JANUARY 2026</div>
+        <h3>I helped my dad write a book — and it's <em>now out</em>.</h3>
+        <p><em>The Regenerate Leap</em> came out of a period of genuine personal adversity in our family. It started as an attempt to make sense of difficult experiences, and to extract something useful from them rather than letting them remain purely disruptive.</p>
+        <p>The core of the book is simple, but not easy: how to transform a crisis into your purpose. It explores how you rebuild direction and identity when life throws a curveball.</p>
+        <p>During that period, I was often frustrated with the legal process. The experience exposed how slow and inefficient it can feel when you are on the inside of a problem rather than studying it from the outside. But it also forced a more important realisation: systems matter, but they do not do the thinking for you.</p>
+        <p>My experience clarified that real progress is built at the level of the individual. It changed how I look at challenge, and at my own role in responding to it. That way of thinking hasn't left me, and it's something I now bring into my legal studies and everything I'm working towards.</p>
+        <p>If anything in this resonates, the book is here. The Guardian also shared our story, if you're interested in seeing more of the background. I hope it offers something useful to someone going through their own crisis.</p>
+        <div class="book-cta-links">
+          <a href="https://amzn.eu/d/dcnwOiK" target="_blank" rel="noopener">READ THE BOOK →</a>
+          <a href="https://www.regenerateleap.com/" target="_blank" rel="noopener">VISIT REGENERATELEAP.COM →</a>
+          <a href="https://lnkd.in/eNrs6kr8" target="_blank" rel="noopener">THE GUARDIAN STORY →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============ DISTINCTIONS ============ -->
+<section id="distinctions" class="distinctions">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">— IV —</div>
+      <h2><em>Affiliations</em></h2>
+      <div class="ornament">✦ ✦ ✦</div>
+    </div>
+    <div class="pillar-grid">
+  <div class="pillar">
+    <h3>Abundance360 Member</h3>
+    <div class="pillar-meta">SINGULARITY UNIVERSITY · 2026</div>
+    <p>Member of Singularity University's Abundance360 — the executive community headed by Peter Diamandis, focused on exponential technologies, systems thinking, and leadership in periods of rapid disruption. Selected to examine how these forces are reshaping industries and the future of abundance.</p>
+  </div>
+
+  <div class="pillar">
+    <h3>Anthropy26 Emerging Leader</h3>
+    <div class="pillar-meta">EDEN PROJECT · MARCH 2026</div>
+    <p>Selected for the Emerging Leaders programme at the United Kingdom's largest gathering of leaders shaping Britain's future across quality of life, vibrant places, prosperity, and global perspective.</p>
+  </div>
+
+  <div class="pillar">
+    <h3>Young Legal Aid Lawyers</h3>
+    <div class="pillar-meta">YLAL · ACTIVE MEMBER</div>
+    <p>Active member of YLAL, the network supporting early-career legal aid practitioners through outreach, mentoring and policy work — a community focused on access to justice and the sustainability of the legal aid profession.</p>
+  </div>
+
+  <div class="pillar">
+    <h3>York Law Society &amp; Amnesty</h3>
+    <div class="pillar-meta">UNIVERSITY OF YORK · 2025–</div>
+    <p>Active member of the Law Society and Amnesty International Society at the University of York — engaging with practising lawyers, legal tech sessions, environmental justice events, and human rights advocacy.</p>
+  </div>
+
+</div>
+  </div>
+</section>
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="education">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">— V —</div>
+      <h2>Education</h2>
+      <div class="ornament">✦ ✦ ✦</div>
+    </div>
+    <div class="edu-stack">
+  <div class="edu-card">
+    <div class="crest">⚜</div>
+    <h3>University of York</h3>
+    <div class="program">Bachelor of Laws (LLB)</div>
+    <div class="years">2025 — 2028</div>
+    <p>Reading Law with a focus on commercial practice and the legal profession's adaptation to AI and exponential technologies. Active member of the York Law Society, Amnesty International Society, and Young Legal Aid Lawyers.</p>
+  </div>
+
+  <div class="edu-card">
+    <div class="crest">⚜</div>
+    <h3>Hills Road Sixth Form College</h3>
+    <div class="program">A-Levels · History, English, Mathematics</div>
+    <div class="years">2022 — 2024 · GRADES AAA</div>
+    <p>Formative training in analytical reasoning, written argument, and quantitative problem-solving — the three lines of work that still underwrite how I read, write, and think.</p>
+    <div class="epq-note">
+      <strong>EXTENDED PROJECT QUALIFICATION <span class="grade-pill">A*</span></strong>
+      A self-produced podcast on human rights violations in the Philippines, covering the Marcos dictatorship and Duterte's War on Drugs. Unpublished.
+    </div>
+  </div>
+
+  <div class="edu-card">
+    <div class="crest">⚜</div>
+    <h3>St Christopher's School</h3>
+    <div class="program">GCSEs</div>
+    <div class="years">2017 — 2022 · 99999988888</div>
+    <p>Secondary education with a consistently high academic record across the sciences, humanities, and languages.</p>
+  </div>
+
+</div>
+  </div>
+</section>
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-head">
+      <div class="num">— VI —</div>
+      <h2>Stay in <em>touch</em></h2>
+      <div class="ornament">✦ ✦ ✦</div>
+    </div>
+    <p class="lead">For correspondence, opportunities, or simply to say hello — I am most easily reached by email.</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="label">EMAIL</div>
+        <a href="mailto:zgmsgreen@gmail.com" class="value">zgmsgreen@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <div class="label">LINKEDIN</div>
+        <a href="https://www.linkedin.com/in/zoe-mascari%C3%B1as-green-137494267/" class="value" target="_blank" rel="noopener">Zoe Mascariñas Green</a>
+      </div>
+      <div class="contact-item">
+        <div class="label">LOCATION</div>
+        <span class="value">York · United Kingdom</span>
+      </div>
+    </div>
+<div class="ai-invite">
+  <div class="ai-invite-rule">✦</div>
+  <h3>A note for fellow students</h3>
+  <p>If you are a student (particularly a law student) looking for an AI toolkit to organise your studies, get in touch. I am happy to share how I use AI as an operating system across university, work at Blue-Green Advisors, side projects, and law-firm applications, and still keep a life. Open to anyone who wants to chat.</p>
+</div>
+  </div>
+</section>
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="signature">Zoe Mascariñas Green</div>
+  <div class="copy">© 2026 · zoegracegreen.com · All rights reserved</div>
+</footer>
+</body>
+</html>
